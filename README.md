@@ -1,6 +1,10 @@
 # rin
 The template for ruby on rails.
 
+```sh
+$ rails new sample -m https://raw.github.com/everysick/rin/master/app_template.rb
+```
+
 ### gems
   
   
