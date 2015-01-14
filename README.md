@@ -1,30 +1,42 @@
 # rin
-The template for ruby on rails.
+
+---
+
+The template for ruby on rails.  
+This application using postgresql.
 
 ```sh
-$ rails new sample -m https://raw.github.com/everysick/rin/master/app_template.rb
+$ rails new sample -m https://raw.github.com/everysick/rin/master/app_template.rb -d postgresql
 ```
 
+## installs
+
 ### gems
-+ pg
++ pg  
 Application main database.
+  
 + redis
-+ redis-rails
++ redis-rails  
 Sub database.
-+ devise
+  
++ devise  
 Account controller.
-+ lazy_high_charts
+  
++ lazy_high_charts  
 To edit charts.
+  
 
 ### UI UX Component
-  
+non  
 
 ### Test
-  
+non
 
 ### Other
+non
+
 
 ## Requirements
 Before creating your application, you will need
-+ Ruby fuga  
-+ Rails hoge  
++ Ruby undefined 
++ Rails undefined  
