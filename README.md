@@ -6,8 +6,16 @@ $ rails new sample -m https://raw.github.com/everysick/rin/master/app_template.r
 ```
 
 ### gems
-  
-  
++ pg
+Application main database.
++ redis
++ redis-rails
+Sub database.
++ devise
+Account controller.
++ lazy_high_charts
+To edit charts.
+
 ### UI UX Component
   
 
