@@ -1,7 +1,5 @@
 # rin
 
----
-
 The template for ruby on rails.  
 This application using postgresql.
 
@@ -15,8 +13,7 @@ $ rails new sample -m https://raw.github.com/everysick/rin/master/app_template.r
 + pg  
 Application main database.
   
-+ redis
-+ redis-rails  
++ redis, redis-rails  
 Sub database.
   
 + devise  
