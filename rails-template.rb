@@ -12,12 +12,26 @@ def install?(name, type)
   end
 end
 
+
 # Before process
 remove_file 'public/index.html'
 
 
 # gems
 # if you add gem, you should call for 'intall?' method.
+# main DB
+install? 'pg', 'gem'
+# to debug
+install? 'pry', 'gem'
+# ruby to js
+install? 'gon', 'gem'
+# redis is DB
+install? 'redis', 'gem'
+install? 'redis-rails', 'gem'
+# account controller
+install? 'devise', 'gem'
+# charts
+install? 'lazy_high_charts', 'gem'
 
 
 # gem groups
