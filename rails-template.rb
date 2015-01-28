@@ -21,8 +21,6 @@ remove_file 'public/index.html'
 # if you add gem, you should call for 'intall?' method.
 # main DB
 install? 'pg', 'gem'
-# to debug
-install? 'pry', 'gem'
 # ruby to js
 install? 'gon', 'gem'
 # redis is DB
@@ -40,7 +38,8 @@ gem_group :production do
 end
 
 gem_group :development do
-  
+  # to debug
+  install? 'pry', 'gem'
 end
 
 gem_group :test do
