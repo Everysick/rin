@@ -19,15 +19,31 @@ remove_file 'public/index.html'
 
 # gems
 # if you add gem, you should call for 'intall?' method.
-# main DB
-install? 'pg', 'gem'
+
+#default ruby, rails versions
+gem 'rails', '4.2.0'
+gem 'ruby', '2.2.0'
+ 
+# OR Mapper
+gem 'pg'
+gem 'activerecord'
+
 # ruby to js
 install? 'gon', 'gem'
+
 # redis is DB
 install? 'redis', 'gem'
 install? 'redis-rails', 'gem'
-# account controller
+
+# API router
+install? 'grape', 'gem'
+
+# account authentication
 install? 'devise', 'gem'
+
+# account authorization
+install? 'cancancan', 'gem'
+
 # charts
 install? 'lazy_high_charts', 'gem'
 
@@ -37,13 +53,24 @@ gem_group :production do
 
 end
 
-gem_group :development do
-  # to debug
-  install? 'pry', 'gem'
-end
+gem_group :test, :development do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  install? 'byebug', 'gem'
 
-gem_group :test do
+  # debugger
+  install? 'pry-rails', 'gem'
+  install? 'pry-byebug', 'gem'
+  install? 'pry-doc', 'gem'
+  install? 'better_errors', 'gem'
   
+  # to test
+  install? 'spring', 'gem'
+  install? 'rspec-rails', 'gem'
+  install? 'factory_girl_rails', 'gem'
+  install? 'guard', 'gem'
+  install? 'guard-rspec', 'gem'
+  install? 'spring-commands-rspec', 'gem'
+  install? 'database_cleaner', 'gem'
 end
 
 
@@ -57,5 +84,4 @@ after_bundle do
   git :init
   git add: "."
   git commit: %Q{ -m 'Initial commit' }
-  
 end
