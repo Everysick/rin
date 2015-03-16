@@ -47,6 +47,20 @@ install? 'cancancan', 'gem'
 # charts
 install? 'lazy_high_charts', 'gem'
 
+# omniauths
+install? 'omniauth', 'gem'
+install? 'omniauth-twitter', 'gem'
+insatll? 'omniauth-facebook', 'gem'
+install? 'omniauth-github', 'gem'
+install? 'omniauth-identity', 'gem'
+
+# settings
+install? 'rails_config', 'gem'
+
+# pagenator
+install? 'kaminari', 'gem'
+install? 'active_admin', 'gem'
+install? 'rails_admin', 'gem'
 
 # gem groups
 gem_group :production do
@@ -57,11 +71,12 @@ gem_group :test, :development do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   install? 'byebug', 'gem'
 
-  # debugger
+  # to debug
   install? 'pry-rails', 'gem'
   install? 'pry-byebug', 'gem'
   install? 'pry-doc', 'gem'
   install? 'better_errors', 'gem'
+  install? 'quiet_assets', 'gem'
   
   # to test
   install? 'spring', 'gem'
